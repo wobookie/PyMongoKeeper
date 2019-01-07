@@ -1,0 +1,84 @@
+/* Login Form */
+#loginContainer {
+  /* background-image:url("https://hdwallsource.com/img/2014/10/free-blurred-wallpaper-36373-37201-hd-wallpapers.jpg"); */
+  background-image:url("/static/assets/images/unsplash-bg.jpg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  width: 100%;
+  height:100%;
+  position: fixed;
+  box-sizing:content-box;
+  top: 0;
+  bottom: 0;
+}
+
+.login-form {
+  width: 600px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  padding: 1em 2em;
+  border-bottom: 2px solid #ccc;
+  display: table;
+}
+
+div.login-form-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.hidden { display: none !important; }
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.keeper-header {
+  max-width: 700px;
+}
+
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 20px; /* Vertically center the text */
+}
+
+code {
+  font-size: 80%;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>MongoKeeper</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+        <!-- FontAwesome -->
+        <script src="{{ url_for('static', filename='assets/js/FontAwesome_5.5.0/all.js') }}" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+        <!-- DataTables
+        <link type="text/css" rel="stylesheet" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/sc-1.5.0/datatables.min.css"/>
+        -->
+
+        <!-- Google font -->
+	    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:700,900" rel="stylesheet">
+
+        <!-- Custom -->
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='assets/css/mongokeeper.css') }}">
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='assets/css/css-loader.css') }}">
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='assets/css/404.css') }}">
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='assets/css/401.css') }}">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+         <div class="loader loader-default" id="loaderId"></div>
+        {% block content %}{% endblock %}
+
+        <!-- Bootstrap core Java Script -->
+        <!-- Placed at the end of the document so the pages load faster
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        -->
+
+        <!-- jQuery -->
+        <script src="{{ url_for('static', filename='assets/js/JQuery_3.3.1/jquery.js') }}"></script>
+
+        <!-- Popper -->
+        <script src="{{ url_for('static', filename='assets/js/Popper_1.14.6/popper.min.js') }}" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap -->
+        <script src="{{ url_for('static', filename='assets/js/Bootstrap_4.2.1/bootstrap.min.js') }}" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+        <!-- Load React. -->
+        <script src="{{ url_for('static', filename='assets/js/React/react.production.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='assets/js/React/react-dom.production.min.js') }}"></script>
+
+        <!-- DataTables
+        <script src="{{ url_for('static', filename='assets/js/DataTables_1.10.18/datatables.min.js') }}"></script>
+        -->
+
+        <!-- Custom -->
+        <script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
+        <script src="{{ url_for('static', filename='assets/js/login.js') }}"></script>
+
+    </body>
+</html>

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Login Form -->
+    <div id="loginContainer">
+        <div class="login-form">
+            <div class="panel">
+                <h2 class="form-signin-heading">MongoKeeper - Sign In</h2>
+                <p>Please enter your email and password</p>
+            </div>
+            <form id="formLoginId" method="post" action="">
+                <label for="input_username" class="sr-only">Username</label>
+                <input type="text"
+                       id="input_username"
+                       name="username"
+                       value="{{ request.form.username }}"
+                       class="form-control mb-3"
+                       placeholder="Username"
+                       autocomplete="section-blue username"
+                       required autofocus>
+                <label for="input_password" class="sr-only">Password</label>
+                <input type="password"
+                       id="input_password"
+                       name="password"
+                       value="{{ request.form.password }}"
+                       class="form-control mb-3"
+                       placeholder="Password"
+                       autocomplete="section-blue current-password"
+                       required>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block mb-3" type="button" id="btnLoginSubmit">Sign in</button>
+
+            </form>
+
+            <div class="alert alert-danger text-center hidden" id="loginErrorMessageId">
+                <p><strong>Error: Can not connect to server, check your credentials and connection !</strong></p>
+            </div>
+        </div>
+    </div>
+    <!-- End Login Form -->
+{% endblock %}
